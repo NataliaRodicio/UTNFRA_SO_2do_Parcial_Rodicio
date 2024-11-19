@@ -60,9 +60,9 @@ if [ ! -f "$TASKS_FILE" ]; then
     src: templates/datos_equipo.txt.j2
     dest: /tmp/2do_parcial/equipo/datos_equipo.txt
   vars:
-    ip: "tu-ip"
-    distro: "tu-distro"
-    cores: "tu-cantidad-de-cores"
+    ip: "172.17.0.1"
+    distro: "Ubuntu"
+    cores: "1"
 
 - name: Configurar sudoers para el grupo 2PSupervisores
   copy:
