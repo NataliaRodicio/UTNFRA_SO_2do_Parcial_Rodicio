@@ -1,0 +1,32 @@
+- name: Crear directorios necesarios
+  file:
+    path: "/tmp/2do_parcial/{{ item }}"
+    state: directory
+    mode: '0755'
+  loop:
+    - alumno
+    - equipo
+
+- name: Crear archivo de datos del alumno
+  template:
+    src: templates/datos_alumno.txt.j2
+    dest: /tmp/2do_parcial/alumno/datos_alumno.txt
+  vars:
+    nombre: "Juan Ignacio"
+    apellido: "Turtl"
+    division: "115"
+
+- name: Crear archivo de datos del equipo
+  template:
+    src: templates/datos_equipo.txt.j2
+    dest: /tmp/2do_parcial/equipo/datos_equipo.txt
+  vars:
+    ip: "172.17.0.1"
+    distro: "Ubuntu"
+    cores: "1"
+
+- name: Configurar sudoers para el grupo 2PSupervisores
+  copy:
+    content: '%2PSupervisores ALL=(ALL) NOPASSWD: ALL'
+    dest: /etc/sudoers.d/2psupervisores
+    validate: 'visudo -cf %s'

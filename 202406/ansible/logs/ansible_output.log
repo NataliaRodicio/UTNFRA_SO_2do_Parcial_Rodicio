@@ -1,0 +1,137 @@
+2024-06-24 18:08:06,499 p=3444395 u=upszot n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-06-24 18:08:06,598 p=3444395 u=upszot n=ansible | PLAY [all] **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:06,609 p=3444395 u=upszot n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,746 p=3444395 u=upszot n=ansible | ok: [localhost]
+2024-06-24 18:08:07,775 p=3444395 u=upszot n=ansible | TASK [include_role : 2do_parcial] ***********************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,805 p=3444395 u=upszot n=ansible | TASK [2do_parcial : debug] ******************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,817 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Tareas del 2do Parcial"
+}
+2024-06-24 18:08:07,836 p=3444395 u=upszot n=ansible | TASK [Otra tarea] ***************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,851 p=3444395 u=upszot n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
+2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-18 21:34:47,082 p=11684 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found
+localhost was 127.0.0.1
+
+2024-11-18 21:34:47,292 p=11684 u=vagrant n=ansible | PLAY [all] *********************************************************************
+2024-11-18 21:34:47,312 p=11684 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2024-11-18 21:34:48,823 p=11684 u=vagrant n=ansible | ok: [localhost]
+2024-11-18 21:34:49,374 p=11684 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-18 21:34:49,396 p=11684 u=vagrant n=ansible | TASK [include_role : 2do_parcial] **********************************************
+2024-11-18 21:34:49,460 p=11684 u=vagrant n=ansible | TASK [2do_parcial : Crear directorios necesarios] ******************************
+2024-11-18 21:34:49,954 p=11684 u=vagrant n=ansible | changed: [localhost] => (item=alumno)
+2024-11-18 21:34:50,202 p=11684 u=vagrant n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-18 21:34:50,227 p=11684 u=vagrant n=ansible | changed: [localhost] => (item=equipo)
+2024-11-18 21:34:50,562 p=11684 u=vagrant n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-18 21:34:50,571 p=11684 u=vagrant n=ansible | TASK [2do_parcial : Crear archivo de datos del alumno] *************************
+2024-11-18 21:34:51,371 p=11684 u=vagrant n=ansible | changed: [localhost]
+2024-11-18 21:34:51,508 p=11684 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-18 21:34:51,519 p=11684 u=vagrant n=ansible | TASK [2do_parcial : Crear archivo de datos del equipo] *************************
+2024-11-18 21:34:52,038 p=11684 u=vagrant n=ansible | changed: [localhost]
+2024-11-18 21:34:52,361 p=11684 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-18 21:34:52,373 p=11684 u=vagrant n=ansible | TASK [2do_parcial : Configurar sudoers para el grupo 2PSupervisores] ***********
+2024-11-18 21:34:52,643 p=11684 u=vagrant n=ansible | fatal: [localhost]: FAILED! => {"msg": "Failed to get information on remote file (/etc/sudoers.d/2psupervisores): Permission denied"}
+2024-11-18 21:34:52,795 p=11684 u=vagrant n=ansible | fatal: [127.0.0.1]: FAILED! => {"msg": "Failed to get information on remote file (/etc/sudoers.d/2psupervisores): Permission denied"}
+2024-11-18 21:34:52,798 p=11684 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2024-11-18 21:34:52,799 p=11684 u=vagrant n=ansible | 127.0.0.1                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-18 21:34:52,799 p=11684 u=vagrant n=ansible | localhost                  : ok=4    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 00:06:15,982 p=2256 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 00:06:16,245 p=2256 u=vagrant n=ansible | PLAY [all] ****************************************************************************************************
+2024-11-19 00:06:16,270 p=2256 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2024-11-19 00:06:17,674 p=2256 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 00:06:18,085 p=2256 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 00:06:18,097 p=2256 u=vagrant n=ansible | TASK [include_role : 2do_parcial] *****************************************************************************
+2024-11-19 00:06:18,144 p=2256 u=vagrant n=ansible | TASK [2do_parcial : Crear directorios necesarios] *************************************************************
+2024-11-19 00:06:18,586 p=2256 u=vagrant n=ansible | changed: [localhost] => (item=alumno)
+2024-11-19 00:06:18,724 p=2256 u=vagrant n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-19 00:06:18,948 p=2256 u=vagrant n=ansible | changed: [localhost] => (item=equipo)
+2024-11-19 00:06:19,017 p=2256 u=vagrant n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-19 00:06:19,032 p=2256 u=vagrant n=ansible | TASK [2do_parcial : Crear archivo de datos del alumno] ********************************************************
+2024-11-19 00:06:19,763 p=2256 u=vagrant n=ansible | changed: [localhost]
+2024-11-19 00:06:19,973 p=2256 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 00:06:19,981 p=2256 u=vagrant n=ansible | TASK [2do_parcial : Crear archivo de datos del equipo] ********************************************************
+2024-11-19 00:06:20,592 p=2256 u=vagrant n=ansible | changed: [localhost]
+2024-11-19 00:06:20,778 p=2256 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 00:06:20,788 p=2256 u=vagrant n=ansible | TASK [2do_parcial : Configurar sudoers para el grupo 2PSupervisores] ******************************************
+2024-11-19 00:06:21,097 p=2256 u=vagrant n=ansible | fatal: [localhost]: FAILED! => {"msg": "Failed to get information on remote file (/etc/sudoers.d/2psupervisores): Permission denied"}
+2024-11-19 00:06:21,159 p=2256 u=vagrant n=ansible | fatal: [127.0.0.1]: FAILED! => {"msg": "Failed to get information on remote file (/etc/sudoers.d/2psupervisores): Permission denied"}
+2024-11-19 00:06:21,160 p=2256 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************
+2024-11-19 00:06:21,161 p=2256 u=vagrant n=ansible | 127.0.0.1                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 00:06:21,161 p=2256 u=vagrant n=ansible | localhost                  : ok=4    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 00:07:48,249 p=2838 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 00:07:48,390 p=2838 u=vagrant n=ansible | PLAY [all] ****************************************************************************************************
+2024-11-19 00:07:48,400 p=2838 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2024-11-19 00:07:49,516 p=2838 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 00:07:50,237 p=2838 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 00:07:50,250 p=2838 u=vagrant n=ansible | TASK [include_role : 2do_parcial] *****************************************************************************
+2024-11-19 00:07:50,296 p=2838 u=vagrant n=ansible | TASK [2do_parcial : Crear directorios necesarios] *************************************************************
+2024-11-19 00:07:50,779 p=2838 u=vagrant n=ansible | ok: [localhost] => (item=alumno)
+2024-11-19 00:07:50,813 p=2838 u=vagrant n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-19 00:07:50,982 p=2838 u=vagrant n=ansible | ok: [localhost] => (item=equipo)
+2024-11-19 00:07:51,207 p=2838 u=vagrant n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-19 00:07:51,215 p=2838 u=vagrant n=ansible | TASK [2do_parcial : Crear archivo de datos del alumno] ********************************************************
+2024-11-19 00:07:51,963 p=2838 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 00:07:52,167 p=2838 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 00:07:52,175 p=2838 u=vagrant n=ansible | TASK [2do_parcial : Crear archivo de datos del equipo] ********************************************************
+2024-11-19 00:07:52,743 p=2838 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 00:07:52,789 p=2838 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 00:07:52,797 p=2838 u=vagrant n=ansible | TASK [2do_parcial : Configurar sudoers para el grupo 2PSupervisores] ******************************************
+2024-11-19 00:07:53,050 p=2838 u=vagrant n=ansible | fatal: [localhost]: FAILED! => {"msg": "Failed to get information on remote file (/etc/sudoers.d/2psupervisores): Permission denied"}
+2024-11-19 00:07:53,240 p=2838 u=vagrant n=ansible | fatal: [127.0.0.1]: FAILED! => {"msg": "Failed to get information on remote file (/etc/sudoers.d/2psupervisores): Permission denied"}
+2024-11-19 00:07:53,244 p=2838 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************
+2024-11-19 00:07:53,245 p=2838 u=vagrant n=ansible | 127.0.0.1                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 00:07:53,246 p=2838 u=vagrant n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 00:08:21,583 p=3405 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 00:08:21,733 p=3405 u=vagrant n=ansible | PLAY [all] ****************************************************************************************************
+2024-11-19 00:08:21,747 p=3405 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2024-11-19 00:08:22,907 p=3405 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 00:08:23,220 p=3405 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 00:08:23,234 p=3405 u=vagrant n=ansible | TASK [include_role : 2do_parcial] *****************************************************************************
+2024-11-19 00:08:23,281 p=3405 u=vagrant n=ansible | TASK [2do_parcial : Crear directorios necesarios] *************************************************************
+2024-11-19 00:08:23,709 p=3405 u=vagrant n=ansible | ok: [localhost] => (item=alumno)
+2024-11-19 00:08:23,913 p=3405 u=vagrant n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-19 00:08:23,929 p=3405 u=vagrant n=ansible | ok: [localhost] => (item=equipo)
+2024-11-19 00:08:24,261 p=3405 u=vagrant n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-19 00:08:24,269 p=3405 u=vagrant n=ansible | TASK [2do_parcial : Crear archivo de datos del alumno] ********************************************************
+2024-11-19 00:08:25,005 p=3405 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 00:08:25,171 p=3405 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 00:08:25,178 p=3405 u=vagrant n=ansible | TASK [2do_parcial : Crear archivo de datos del equipo] ********************************************************
+2024-11-19 00:08:25,647 p=3405 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 00:08:25,884 p=3405 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 00:08:25,892 p=3405 u=vagrant n=ansible | TASK [2do_parcial : Configurar sudoers para el grupo 2PSupervisores] ******************************************
+2024-11-19 00:08:26,149 p=3405 u=vagrant n=ansible | fatal: [localhost]: FAILED! => {"msg": "Failed to get information on remote file (/etc/sudoers.d/2psupervisores): Permission denied"}
+2024-11-19 00:08:26,299 p=3405 u=vagrant n=ansible | fatal: [127.0.0.1]: FAILED! => {"msg": "Failed to get information on remote file (/etc/sudoers.d/2psupervisores): Permission denied"}
+2024-11-19 00:08:26,301 p=3405 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************
+2024-11-19 00:08:26,302 p=3405 u=vagrant n=ansible | 127.0.0.1                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 00:08:26,303 p=3405 u=vagrant n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 00:10:37,871 p=3913 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 00:10:38,119 p=3913 u=vagrant n=ansible | PLAY [all] ****************************************************************************************************
+2024-11-19 00:10:38,129 p=3913 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2024-11-19 00:10:39,400 p=3913 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 00:10:39,932 p=3913 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 00:10:39,946 p=3913 u=vagrant n=ansible | TASK [include_role : 2do_parcial] *****************************************************************************
+2024-11-19 00:10:39,993 p=3913 u=vagrant n=ansible | TASK [2do_parcial : Crear directorios necesarios] *************************************************************
+2024-11-19 00:10:40,384 p=3913 u=vagrant n=ansible | ok: [localhost] => (item=alumno)
+2024-11-19 00:10:40,620 p=3913 u=vagrant n=ansible | ok: [127.0.0.1] => (item=alumno)
+2024-11-19 00:10:40,633 p=3913 u=vagrant n=ansible | ok: [localhost] => (item=equipo)
+2024-11-19 00:10:40,928 p=3913 u=vagrant n=ansible | ok: [127.0.0.1] => (item=equipo)
+2024-11-19 00:10:40,936 p=3913 u=vagrant n=ansible | TASK [2do_parcial : Crear archivo de datos del alumno] ********************************************************
+2024-11-19 00:10:41,669 p=3913 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 00:10:41,878 p=3913 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 00:10:41,885 p=3913 u=vagrant n=ansible | TASK [2do_parcial : Crear archivo de datos del equipo] ********************************************************
+2024-11-19 00:10:42,433 p=3913 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 00:10:42,582 p=3913 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 00:10:42,590 p=3913 u=vagrant n=ansible | TASK [2do_parcial : Configurar sudoers para el grupo 2PSupervisores] ******************************************
+2024-11-19 00:10:42,832 p=3913 u=vagrant n=ansible | fatal: [localhost]: FAILED! => {"msg": "Failed to get information on remote file (/etc/sudoers.d/2psupervisores): Permission denied"}
+2024-11-19 00:10:42,989 p=3913 u=vagrant n=ansible | fatal: [127.0.0.1]: FAILED! => {"msg": "Failed to get information on remote file (/etc/sudoers.d/2psupervisores): Permission denied"}
+2024-11-19 00:10:42,991 p=3913 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************
+2024-11-19 00:10:42,992 p=3913 u=vagrant n=ansible | 127.0.0.1                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 00:10:42,992 p=3913 u=vagrant n=ansible | localhost                  : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
